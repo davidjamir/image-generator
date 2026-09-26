@@ -1,6 +1,3 @@
-import type { Category } from "@/core/domain/category";
-import type { Page } from "@/core/domain/page";
-
 export type SiteTheme =
   | "team"
   | "sport"
@@ -117,8 +114,6 @@ export type Site = {
   seo: SiteSeo;
   ads: SiteAds;
   script: SiteScriptItem[];
-  categories: Category[];
-  pages: Page[];
   verification: SiteVerification;
   configView: {
     category: "list" | "grid";
